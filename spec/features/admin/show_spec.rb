@@ -26,7 +26,7 @@ RSpec.describe "The admin applications show page" do
     expect(page).to have_content('Mr. Pirate')
   end
 
-  it "approves an adoption" do
+  xit "approves an adoption" do
     visit "/admin/applications/#{@application_1.id}"
     click_button("Approve this adoption")
     expect(current_path).to eq("/admin/applications/#{@application_1.id}")
